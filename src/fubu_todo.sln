@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fubu_todo", "fubu_todo\fubu_todo.csproj", "{E61F9AD7-A054-4375-B837-F34F959CEC85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fubu_todo_test", "fubu_todo_test\fubu_todo_test.csproj", "{8E0D79F7-6A37-4DC4-B674-C6C6168C0A40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E61F9AD7-A054-4375-B837-F34F959CEC85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E61F9AD7-A054-4375-B837-F34F959CEC85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E61F9AD7-A054-4375-B837-F34F959CEC85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E61F9AD7-A054-4375-B837-F34F959CEC85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E0D79F7-6A37-4DC4-B674-C6C6168C0A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E0D79F7-6A37-4DC4-B674-C6C6168C0A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E0D79F7-6A37-4DC4-B674-C6C6168C0A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E0D79F7-6A37-4DC4-B674-C6C6168C0A40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

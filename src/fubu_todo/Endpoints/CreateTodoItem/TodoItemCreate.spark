@@ -1,0 +1,11 @@
+﻿<viewdata model="fubu_todo.FubuTodoViewModel" />
+<h1>Creating a new todo item</h1>
+<form action="" method="post">
+  <p>
+    <!--${this.Edit(x => x.title)}-->
+  </p>
+  <p>
+    <!--${this.Edit(x => x.description)}-->
+  </p>
+  <input type="submit" />
+</form>

@@ -1,0 +1,26 @@
+﻿<viewdata model="fubu_todo.TodoListViewModel" />
+<content:main>
+  <table>
+    <tr>
+      <td>title</td>
+      <td>description</td>
+      <td>completed</td>
+    </tr>
+    <for each="var todoItem in Model.todoList">
+      <tr>
+        <td>${todoItem.title}</td>
+        <td>${todoItem.description}</td>
+        <td>${todoItem.complete}</td>
+        <td><button type="button">Edit</button></td>
+        <td><button type="button">Delete</button></td>
+      </tr>
+    </for>
+    <tr>
+      <td>
+        <button type="button">Add Todo</button>
+      </td>
+    </tr>
+  </table>
+</content:main>
+
+
