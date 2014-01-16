@@ -1,4 +1,3 @@
-C:\code\fubu_todo\src\fubu_todo_test\obj\Debug\fubu_todo_test.csprojResolveAssemblyReference.cache
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\fubu_todo_test.dll
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\fubu_todo_test.pdb
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\Bottles.dll
@@ -59,5 +58,6 @@ C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\Rhino.Mocks.xml
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\StructureMap.pdb
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\StructureMap.xml
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\StructureMap.AutoMocking.xml
+C:\code\fubu_todo\src\fubu_todo_test\obj\Debug\fubu_todo_test.csprojResolveAssemblyReference.cache
 C:\code\fubu_todo\src\fubu_todo_test\obj\Debug\fubu_todo_test.dll
 C:\code\fubu_todo\src\fubu_todo_test\obj\Debug\fubu_todo_test.pdb

@@ -8,19 +8,21 @@
     </tr>
     <for each="var todoItem in Model.todoList">
       <tr>
-        <td>${todoItem.title}</td>
-        <td>${todoItem.description}</td>
-        <td>${todoItem.complete}</td>
-        <td><button type="button">Edit</button></td>
-        <td><button type="button">Delete</button></td>
+        <form method="post">
+          <input type="hidden" value="${todoItem.Id}" />
+          <td>${todoItem.title}</td>
+          <td>${todoItem.description}</td>
+          <td>${todoItem.complete}</td>
+          <td><button type="submit">Mark Completed</button></td>
+        </form>
       </tr>
     </for>
-    <tr>
-      <td>
-        <button type="button">Add Todo</button>
-      </td>
-    </tr>
   </table>
+  <form method="post" action="fubu_todo/todoitem/createtodo">
+    Title: <input type="text" name="title" />
+    Description: <input type="text" name="description" />
+    <input type="submit" value="Add!" />
+  </form>
 </content:main>
 
 

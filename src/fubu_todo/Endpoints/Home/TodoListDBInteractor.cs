@@ -27,6 +27,11 @@ namespace fubu_todo.Endpoints.Home
         {
             return _entityRepository.All<FubuTodoViewModel>().ToList();
         }
+
+        public void markComplete(FubuTodoViewModel completedTodo)
+        {
+            _entityRepository.Update(completedTodo);
+        }
     }
 
     public interface ITodoListDBInteractor
@@ -34,5 +39,6 @@ namespace fubu_todo.Endpoints.Home
         void addTodo(FubuTodoViewModel newTodo);
         IEnumerable<FubuTodoViewModel> getUncompleted();
         IEnumerable<FubuTodoViewModel> GetAll();
+        void markComplete(FubuTodoViewModel completedTodo);
     }
 }

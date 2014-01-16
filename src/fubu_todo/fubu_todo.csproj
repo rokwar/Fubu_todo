@@ -4,7 +4,8 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion></ProductVersion>
+    <ProductVersion>
+    </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{E61F9AD7-A054-4375-B837-F34F959CEC85}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -75,6 +76,9 @@
     </Reference>
     <Reference Include="FubuMVC.Navigation">
       <HintPath>..\packages\FubuMVC.Navigation\lib\net40\FubuMVC.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="FubuMVC.RavenDb">
+      <HintPath>..\packages\FubuMVC.RavenDb\lib\net40\FubuMVC.RavenDb.dll</HintPath>
     </Reference>
     <Reference Include="FubuMVC.Razor">
       <HintPath>..\packages\FubuMVC.Razor\lib\net40\FubuMVC.Razor.dll</HintPath>
@@ -223,9 +227,6 @@
     <Compile Include="TodoFubuRegistry.cs" />
     <Compile Include="Endpoints\CreateTodoItem\TodoItemEndpoint.cs" />
     <Compile Include="Endpoints\Home\TodoListViewModel.cs" />
-    <None Include="Endpoints\CreateTodoItem\TodoItemCreate.spark">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Web.Debug.config">
@@ -254,7 +255,8 @@
           <IISUrl>http://localhost:49970/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl></CustomServerUrl>
+          <CustomServerUrl>
+          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

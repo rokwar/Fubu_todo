@@ -32,5 +32,12 @@ namespace fubu_todo_test
             ClassUnderTest.addTodo(new FubuTodoViewModel{complete = true});
             ClassUnderTest.getUncompleted().ShouldHaveCount(1);
         }
+        [Test]
+        public void GetAll()
+        {
+            ClassUnderTest.addTodo(new FubuTodoViewModel());
+            ClassUnderTest.addTodo(new FubuTodoViewModel { complete = true });
+            ClassUnderTest.GetAll().ShouldHaveCount(2);
+        }
     }
 }

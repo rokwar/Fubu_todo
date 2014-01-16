@@ -14,6 +14,7 @@ C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Core.View.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Diagnostics.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.JQueryUI.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Navigation.dll
+C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.RavenDb.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Razor.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Spark.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.StructureMap.dll
@@ -63,6 +64,7 @@ C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Core.View.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Diagnostics.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.JQueryUI.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Navigation.pdb
+C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.RavenDb.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Razor.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Spark.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.StructureMap.pdb

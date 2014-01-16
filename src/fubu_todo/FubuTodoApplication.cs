@@ -38,8 +38,6 @@ namespace fubu_todo
                 scanner.TheCallingAssembly();
                 scanner.WithDefaultConventions();
             });
-
-            For<IEntityRepository>().Use<EntityRepository>();
         }
     }
 }

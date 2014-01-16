@@ -1,14 +1,26 @@
-﻿namespace fubu_todo
+﻿using System;
+using FubuMVC.Core.Continuations;
+using fubu_todo.Endpoints.Home;
+using Raven.Client.Linq;
+
+namespace fubu_todo
 {
     public class TodoItemEndpoint
     {
-        public FubuTodoViewModel createTodo(CreateTodo todo)
+        private readonly ITodoListDBInteractor _dbInteractor;
+        public TodoItemEndpoint(ITodoListDBInteractor dbInteractor)
         {
-            return new FubuTodoViewModel
+            _dbInteractor = dbInteractor; 
+        }
+        public FubuContinuation createTodo(FubuTodoViewModel viewModel)
+        {
+            FubuTodoViewModel newTodo = new FubuTodoViewModel
             {
-                title = todo.Title,
-                description = todo.Description
+                title = viewModel.title,
+                description = viewModel.description
             };
+            _dbInteractor.addTodo(newTodo);
+            return FubuContinuation.RedirectTo<HomeEndpoint>(x => x.Index());
         }
     }
 
