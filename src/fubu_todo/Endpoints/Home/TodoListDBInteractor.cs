@@ -7,15 +7,17 @@ namespace fubu_todo.Endpoints.Home
     public class TodoListDBInteractor : ITodoListDBInteractor
     {
         private readonly IEntityRepository _entityRepository;
-        
-        public TodoListDBInteractor(IEntityRepository entityRepository)
+        private readonly ITransaction _transaction;
+
+        public TodoListDBInteractor(IEntityRepository entityRepository, ITransaction transaction)
         {
             _entityRepository = entityRepository;
+            _transaction = transaction;
         }
 
         public void addTodo(FubuTodoViewModel newTodo)
         {
-            _entityRepository.Update(newTodo);
+            _transaction.WithRepository(x => x.Update(newTodo));
         }
 
         public IEnumerable<FubuTodoViewModel> getUncompleted()
@@ -30,7 +32,7 @@ namespace fubu_todo.Endpoints.Home
 
         public void markComplete(FubuTodoViewModel completedTodo)
         {
-            _entityRepository.Update(completedTodo);
+            _transaction.WithRepository(x => x.Update(completedTodo));
         }
     }
 

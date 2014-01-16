@@ -4,6 +4,7 @@ using FubuMVC.Core;
 using FubuMVC.StructureMap;
 using FubuPersistence;
 using FubuPersistence.RavenDb;
+using Spark.Compiler;
 using StructureMap;
 using StructureMap.Configuration.DSL;
 
