@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.UI.WebControls;
 using FubuMVC.Core.Continuations;
 using fubu_todo.Endpoints.Home;
 using Raven.Client.Linq;
@@ -20,6 +21,11 @@ namespace fubu_todo
                 description = viewModel.description
             };
             _dbInteractor.addTodo(newTodo);
+            return FubuContinuation.RedirectTo<HomeEndpoint>(x => x.Index());
+        }
+        public FubuContinuation completeTodo(FubuTodoViewModel viewModel)
+        {
+            _dbInteractor.markComplete(viewModel);
             return FubuContinuation.RedirectTo<HomeEndpoint>(x => x.Index());
         }
     }

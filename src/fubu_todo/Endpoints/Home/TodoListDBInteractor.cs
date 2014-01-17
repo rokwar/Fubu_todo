@@ -32,6 +32,7 @@ namespace fubu_todo.Endpoints.Home
 
         public void markComplete(FubuTodoViewModel completedTodo)
         {
+            completedTodo.complete = true;
             _transaction.WithRepository(x => x.Update(completedTodo));
         }
     }
