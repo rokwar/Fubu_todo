@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using FubuPersistence;
+using FubuPersistence.InMemory;
 using FubuTestingSupport;
 using fubu_todo;
 using fubu_todo.Endpoints.Home;
@@ -15,7 +16,8 @@ namespace fubu_todo_test
         protected override void beforeEach()
         {
             var repository = EntityRepository.InMemory();
-            Container.Inject<IEntityRepository>(repository);
+            Services.Inject<IEntityRepository>(repository);
+            Services.Inject<ITransaction>(new DelegatingTransaction(Services.Container));
         }
 
         [Test]
