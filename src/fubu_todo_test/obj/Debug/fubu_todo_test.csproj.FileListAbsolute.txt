@@ -22,6 +22,8 @@ C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\Microsoft.CompilerServices.AsyncT
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\Newtonsoft.Json.dll
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\NLog.dll
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\nunit.framework.dll
+C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\nunit.mocks.dll
+C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\pnunit.framework.dll
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\Raven.Abstractions.dll
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\Raven.Client.Lightweight.dll
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\Rhino.Mocks.dll
@@ -30,7 +32,6 @@ C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\StructureMap.AutoMocking.dll
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\StructureMap.dll
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\WebActivator.dll
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\Bottles.pdb
-C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\FubuPersistence.pdb
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\fubu_todo.pdb
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\FubuCore.pdb
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\FubuLocalization.pdb
@@ -45,6 +46,7 @@ C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\FubuMVC.Razor.pdb
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\FubuMVC.Spark.pdb
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\FubuMVC.StructureMap.pdb
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\FubuMVC.TwitterBootstrap.pdb
+C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\FubuPersistence.pdb
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\FubuTestingSupport.pdb
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\Newtonsoft.Json.pdb
 C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\Newtonsoft.Json.xml
@@ -61,3 +63,5 @@ C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\StructureMap.AutoMocking.xml
 C:\code\fubu_todo\src\fubu_todo_test\obj\Debug\fubu_todo_test.csprojResolveAssemblyReference.cache
 C:\code\fubu_todo\src\fubu_todo_test\obj\Debug\fubu_todo_test.dll
 C:\code\fubu_todo\src\fubu_todo_test\obj\Debug\fubu_todo_test.pdb
+C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\FubuValidation.dll
+C:\code\fubu_todo\src\fubu_todo_test\bin\Debug\FubuValidation.pdb

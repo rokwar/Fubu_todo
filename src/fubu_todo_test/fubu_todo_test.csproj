@@ -33,9 +33,6 @@
     <Reference Include="Bottles">
       <HintPath>..\fubu_todo\bin\Bottles.dll</HintPath>
     </Reference>
-    <Reference Include="FubuPersistence">
-      <HintPath>..\packages\FubuPersistence\lib\net40\FubuPersistence.dll</HintPath>
-    </Reference>
     <Reference Include="fubu_todo">
       <HintPath>..\fubu_todo\bin\fubu_todo.dll</HintPath>
     </Reference>
@@ -78,6 +75,9 @@
     <Reference Include="FubuMVC.TwitterBootstrap">
       <HintPath>..\fubu_todo\bin\FubuMVC.TwitterBootstrap.dll</HintPath>
     </Reference>
+    <Reference Include="FubuPersistence">
+      <HintPath>..\packages\FubuPersistence\lib\net40\FubuPersistence.dll</HintPath>
+    </Reference>
     <Reference Include="FubuTestingSupport">
       <HintPath>..\packages\FubuTestingSupport\lib\FubuTestingSupport.dll</HintPath>
     </Reference>
@@ -96,6 +96,12 @@
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks">
+      <HintPath>..\packages\NUnit\lib\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="pnunit.framework">
+      <HintPath>..\packages\NUnit\lib\pnunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Raven.Abstractions">
       <HintPath>..\packages\RavenDB.Client\lib\net45\Raven.Abstractions.dll</HintPath>

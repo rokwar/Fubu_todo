@@ -1,5 +1,8 @@
 ﻿using System;
+using FubuMVC.Core.Registration;
 using FubuPersistence;
+using FubuMVC.Validation;
+using FubuValidation;
 
 namespace fubu_todo
 {
@@ -15,5 +18,14 @@ namespace fubu_todo
         }
 
         public Guid Id { get; set; }
+    }
+
+    public class FubuTodoViewModelOverrides : ClassValidationRules<CreateTodo>
+    {
+        public FubuTodoViewModelOverrides()
+        {
+            Property(x => x.Title).Required(ValidationMode.Triggered);
+            Property(x => x.Description).Required(ValidationMode.Triggered);
+        }
     }
 }

@@ -1,37 +1,43 @@
 ﻿<viewdata model="fubu_todo.TodoListViewModel" />
 <content:main>
-  <table>
-    <tr>
-      <td>title</td>
-      <td>description</td>
-      <td>completed</td>
-    </tr>
-    <for each="var todoItem in Model.todoList">
+  <div class="content">
+    <table class="table table-hober">
       <tr>
-        <form method="post">
-          <input type="hidden" name ="Id" value="${todoItem.Id}" />
-          <td>
-            ${todoItem.title} 
-            <input type="hidden" name ="title" value="${todoItem.title}" />
-          </td>
-          <td>
-            ${todoItem.description} 
-            <input type="hidden" name ="description" value="${todoItem.description}" />
-          </td>
-          <td>
-            ${todoItem.complete} 
-            <input type="hidden" name ="complete" value="${todoItem.complete}" />
-          </td>
-          <td><button type="submit" formaction="fubu_todo/todoitem/completeTodo">Mark Completed</button></td>
-        </form>
+        <td>title</td>
+        <td>description</td>
+        <td>completed</td>
       </tr>
-    </for>
-  </table>
-  <form method="post" action="fubu_todo/todoitem/createtodo">
-    Title: <input type="text" name="title" />
-    Description: <input type="text" name="description" />
-    <input type="submit" value="Add!" />
-  </form>
+      <for each="var todoItem in Model.todoList">
+        <tr>
+          <form method="post">
+            <input type="hidden" name ="Id" value="${todoItem.Id}" />
+            <td>
+              ${todoItem.title} 
+              <input type="hidden" name ="title" value="${todoItem.title}" />
+            </td>
+            <td>
+              ${todoItem.description} 
+              <input type="hidden" name ="description" value="${todoItem.description}" />
+            </td>
+            <td>
+              ${todoItem.complete} 
+              <input type="hidden" name ="complete" value="${todoItem.complete}" />
+            </td>
+            <td><button type="submit" formaction="fubu_todo/todoitem/completeTodo">Mark Completed</button></td>
+            <td>
+              <button type="submit" formaction="fubu_todo/todoitem/deleteTodo">Delete</button>
+            </td>
+          </form>
+        </tr>
+      </for>
+    </table>
+
+    ${ this.FormFor<CreateTodo>() }
+      Title: <input type="text" name="Title" />
+      Description: <input type="text" name="Description" />
+      <input type="submit" value="Add!" />
+    ${ this.EndForm() }
+   </div>
 </content:main>
 
 

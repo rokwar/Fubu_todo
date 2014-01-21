@@ -15,10 +15,10 @@ C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Diagnostics.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.JQueryUI.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Navigation.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.RavenDb.dll
-C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Razor.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Spark.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.StructureMap.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.TwitterBootstrap.dll
+C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Validation.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuPersistence.dll
 C:\code\fubu_todo\src\fubu_todo\bin\FubuTestingSupport.dll
 C:\code\fubu_todo\src\fubu_todo\bin\GeoAPI.dll
@@ -36,6 +36,8 @@ C:\code\fubu_todo\src\fubu_todo\bin\Microsoft.WindowsAzure.Storage.dll
 C:\code\fubu_todo\src\fubu_todo\bin\Mono.Cecil.dll
 C:\code\fubu_todo\src\fubu_todo\bin\NetTopologySuite.dll
 C:\code\fubu_todo\src\fubu_todo\bin\nunit.framework.dll
+C:\code\fubu_todo\src\fubu_todo\bin\nunit.mocks.dll
+C:\code\fubu_todo\src\fubu_todo\bin\pnunit.framework.dll
 C:\code\fubu_todo\src\fubu_todo\bin\PowerCollections.dll
 C:\code\fubu_todo\src\fubu_todo\bin\Raven.Abstractions.dll
 C:\code\fubu_todo\src\fubu_todo\bin\Raven.Client.Embedded.dll
@@ -44,6 +46,7 @@ C:\code\fubu_todo\src\fubu_todo\bin\Raven.Database.dll
 C:\code\fubu_todo\src\fubu_todo\bin\Rhino.Mocks.dll
 C:\code\fubu_todo\src\fubu_todo\bin\Spark.dll
 C:\code\fubu_todo\src\fubu_todo\bin\Spatial4n.Core.NTS.dll
+C:\code\fubu_todo\src\fubu_todo\bin\StructureMap.AutoMocking.dll
 C:\code\fubu_todo\src\fubu_todo\bin\StructureMap.dll
 C:\code\fubu_todo\src\fubu_todo\bin\System.Spatial.dll
 C:\code\fubu_todo\src\fubu_todo\bin\System.Web.Razor.dll
@@ -69,6 +72,7 @@ C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Razor.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Spark.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.StructureMap.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.TwitterBootstrap.pdb
+C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Validation.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\FubuPersistence.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\FubuTestingSupport.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\ICSharpCode.NRefactory.xml
@@ -95,6 +99,7 @@ C:\code\fubu_todo\src\fubu_todo\bin\Spatial4n.Core.NTS.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\Spatial4n.Core.NTS.xml
 C:\code\fubu_todo\src\fubu_todo\bin\StructureMap.pdb
 C:\code\fubu_todo\src\fubu_todo\bin\StructureMap.xml
+C:\code\fubu_todo\src\fubu_todo\bin\StructureMap.AutoMocking.xml
 C:\code\fubu_todo\src\fubu_todo\bin\System.Spatial.xml
 C:\code\fubu_todo\src\fubu_todo\bin\System.Web.Razor.xml
 C:\code\fubu_todo\src\fubu_todo\bin\Microsoft.Data.Services.Client.xml
@@ -128,3 +133,7 @@ C:\code\fubu_todo\src\fubu_todo\bin\zh-Hant\System.Spatial.resources.dll
 C:\code\fubu_todo\src\fubu_todo\obj\Debug\fubu_todo.csprojResolveAssemblyReference.cache
 C:\code\fubu_todo\src\fubu_todo\obj\Debug\fubu_todo.dll
 C:\code\fubu_todo\src\fubu_todo\obj\Debug\fubu_todo.pdb
+C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Ajax.dll
+C:\code\fubu_todo\src\fubu_todo\bin\FubuValidation.dll
+C:\code\fubu_todo\src\fubu_todo\bin\FubuMVC.Ajax.pdb
+C:\code\fubu_todo\src\fubu_todo\bin\FubuValidation.pdb

@@ -3,6 +3,7 @@ using System.Linq;
 using FubuMVC.Core.Continuations;
 using FubuMVC.Diagnostics.Visualization;
 using fubu_todo.Endpoints.Home;
+using FubuMVC.TwitterBootstrap;
 
 namespace fubu_todo
 {
@@ -20,6 +21,7 @@ namespace fubu_todo
             var todoItems = new TodoListViewModel
             {
                 todoList = _dbInteractor.GetAll().ToList()
+                
             };
             return todoItems;
         }

@@ -13,26 +13,28 @@ namespace fubu_todo
         {
             _dbInteractor = dbInteractor; 
         }
-        public FubuContinuation createTodo(FubuTodoViewModel viewModel)
+
+        public FubuContinuation completeTodo(CompleteTodo viewModel)
         {
-            FubuTodoViewModel newTodo = new FubuTodoViewModel
-            {
-                title = viewModel.title,
-                description = viewModel.description
-            };
-            _dbInteractor.addTodo(newTodo);
+            _dbInteractor.markComplete(viewModel.Id);
             return FubuContinuation.RedirectTo<HomeEndpoint>(x => x.Index());
         }
-        public FubuContinuation completeTodo(FubuTodoViewModel viewModel)
+
+        public FubuContinuation deleteTodo(DeleteTodo viewModel)
         {
-            _dbInteractor.markComplete(viewModel);
+            _dbInteractor.deleteTodo(viewModel.Id);
             return FubuContinuation.RedirectTo<HomeEndpoint>(x => x.Index());
         }
     }
 
-    public class CreateTodo
+    public class DeleteTodo
     {
-        public string Title { get; set; }
-        public string Description { get; set; }
+        public Guid Id { get; set; }
     }
+
+    public class CompleteTodo
+    {
+        public Guid Id { get; set; }
+    }
+
 }

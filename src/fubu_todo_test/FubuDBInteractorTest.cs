@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using FubuMVC.Core.Continuations;
 using FubuPersistence;
 using FubuPersistence.InMemory;
 using FubuTestingSupport;
@@ -45,11 +47,23 @@ namespace fubu_todo_test
         [Test]
         public void markCompletedTest()
         {
-            FubuTodoViewModel testModel = new FubuTodoViewModel();
+            var guid = Guid.NewGuid();
+            FubuTodoViewModel testModel = new FubuTodoViewModel {Id = guid};
             ClassUnderTest.addTodo(testModel);
-            ClassUnderTest.markComplete(testModel);
+            ClassUnderTest.markComplete(guid);
             ClassUnderTest.GetAll().ShouldHaveCount(1);
             ClassUnderTest.getUncompleted().ShouldHaveCount(0);
+        }
+
+        [Test]
+        public void deleteTodoTest()
+        {
+            var guid = Guid.NewGuid();
+            FubuTodoViewModel testModel = new FubuTodoViewModel { Id = guid };
+            ClassUnderTest.addTodo(testModel);
+            ClassUnderTest.addTodo(new FubuTodoViewModel { complete = true });
+            ClassUnderTest.deleteTodo(guid);
+            ClassUnderTest.GetAll().ShouldHaveCount(1);
         }
     }
 }

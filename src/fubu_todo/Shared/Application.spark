@@ -1,9 +1,17 @@
 ﻿
-<shtml xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <title>todo app</title>
+  
 </head>
 <body>
-  <use content ="main"/>
+  
+  
+      <use content ="main"/>
+
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" />
+
+	${ this.WriteScriptTags() }
 </body>
 </html>
