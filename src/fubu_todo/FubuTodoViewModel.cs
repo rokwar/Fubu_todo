@@ -1,4 +1,5 @@
 ﻿using System;
+using FubuLocalization;
 using FubuMVC.Core.Registration;
 using FubuPersistence;
 using FubuMVC.Validation;
@@ -24,8 +25,19 @@ namespace fubu_todo
     {
         public FubuTodoViewModelOverrides()
         {
-            Property(x => x.Title).Required(ValidationMode.Triggered);
-            Property(x => x.Description).Required(ValidationMode.Triggered);
+            Property(x => x.Title).Required(ValidationTokens.TitleRequired, ValidationMode.Triggered);
+            Property(x => x.Description).Required(ValidationTokens.DescriptionRequired, ValidationMode.Triggered);
+        }
+    }
+
+    public class ValidationTokens : StringToken
+    {
+        public static ValidationTokens TitleRequired = new ValidationTokens("Title is required");
+        public static ValidationTokens DescriptionRequired = new ValidationTokens("Description is required");
+        public ValidationTokens(string defaultValue)
+            : base(null, defaultValue)
+        {
+            
         }
     }
 }
