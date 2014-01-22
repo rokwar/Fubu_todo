@@ -31,7 +31,18 @@
         </tr>
       </for>
     </table>
-
+    <div name="meExtrasta">
+      
+    </div>
+    <script type="text/javascript">
+        $.ajax({
+     type: "GET,
+     url: "all/items",
+     dataType: "json",
+     success: function(){},
+     error: function(){}
+      });
+    </script>
     ${ this.FormFor<CreateTodo>() }
       Title: <input type="text" name="Title" />
       Description: <input type="text" name="Description" />

@@ -25,6 +25,14 @@ namespace fubu_todo
             };
             return todoItems;
         }
+        public TodoListViewModel get_all_items()
+        {
+            TodoListViewModel allItems = new TodoListViewModel
+            {
+                todoList = _dbInteractor.GetAll().ToList()
+            };
+            return allItems;
+        }
 
         public Response post_update(Request request)
         {
