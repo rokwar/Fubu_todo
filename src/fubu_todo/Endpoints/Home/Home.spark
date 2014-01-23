@@ -34,20 +34,18 @@
     <div name="meExtrasta">
       
     </div>
-    <script type="text/javascript">
-        $.ajax({
-     type: "GET,
-     url: "all/items",
-     dataType: "json",
-     success: function(){},
-     error: function(){}
-      });
+    <script type="text/javascript" src="create-item.js">
     </script>
-    ${ this.FormFor<CreateTodo>() }
+    <Form model="fubu_todo.Endpoints.CreateTodoItem.CreateTodoEndpoint" id="createTodo" >
       Title: <input type="text" name="Title" />
       Description: <input type="text" name="Description" />
-      <input type="submit" value="Add!" />
-    ${ this.EndForm() }
+      <button onclick="todoCreate(event)">
+        Add Todo
+      </button>
+    </Form>
+      <!--${ this.FormFor<CreateTodo>() }
+      
+    ${ this.EndForm() }-->
    </div>
 </content:main>
 
