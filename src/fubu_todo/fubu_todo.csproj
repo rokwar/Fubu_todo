@@ -221,7 +221,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Endpoints\Home\CreateItem.js" />
+    <Content Include="content\scripts\create-item.js" />
     <Content Include="Global.asax" />
     <Content Include="Endpoints\CreateTodoItem\CreateTodo.spark" />
     <Content Include="en-US.locale.config" />

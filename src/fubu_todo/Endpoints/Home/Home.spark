@@ -1,51 +1,48 @@
 ﻿<viewdata model="fubu_todo.TodoListViewModel" />
 <content:main>
+  
+	</script>
   <div class="content">
-    <table class="table table-hober">
-      <tr>
-        <td>title</td>
-        <td>description</td>
-        <td>completed</td>
-      </tr>
-      <for each="var todoItem in Model.todoList">
+    <div class="tableInformation">
+      <table class="table table-hober">
         <tr>
-          <form method="post">
-            <input type="hidden" name ="Id" value="${todoItem.Id}" />
-            <td>
-              ${todoItem.title} 
-              <input type="hidden" name ="title" value="${todoItem.title}" />
-            </td>
-            <td>
-              ${todoItem.description} 
-              <input type="hidden" name ="description" value="${todoItem.description}" />
-            </td>
-            <td>
-              ${todoItem.complete} 
-              <input type="hidden" name ="complete" value="${todoItem.complete}" />
-            </td>
-            <td><button type="submit" formaction="fubu_todo/todoitem/completeTodo">Mark Completed</button></td>
-            <td>
-              <button type="submit" formaction="fubu_todo/todoitem/deleteTodo">Delete</button>
-            </td>
-          </form>
+          <td>title</td>
+          <td>description</td>
+          <td>completed</td>
         </tr>
-      </for>
-    </table>
-    <div name="meExtrasta">
-      
+        <for each="var todoItem in Model.todoList">
+          <tr>
+            <form method="post">
+              <input type="hidden" name ="Id" value="${todoItem.Id}" />
+              <td>
+                ${todoItem.title} 
+                <input type="hidden" name ="title" value="${todoItem.title}" />
+              </td>
+              <td>
+                ${todoItem.description} 
+                <input type="hidden" name ="description" value="${todoItem.description}" />
+              </td>
+              <td>
+                ${todoItem.complete} 
+                <input type="hidden" name ="complete" value="${todoItem.complete}" />
+              </td>
+              <td><button onclick="todoComplete(event, $(this).parents('form:first'))">Mark Completed</button></td>
+              <td>
+                <button type="submit" formaction="fubu_todo/todoitem/deleteTodo">Delete</button>
+              </td>
+            </form>
+          </tr>
+        </for>
+      </table>
     </div>
-    <script type="text/javascript" src="create-item.js">
-    </script>
-    <Form model="fubu_todo.Endpoints.CreateTodoItem.CreateTodoEndpoint" id="createTodo" >
+    
+    <Form model="fubu_todo.Endpoints.CreateTodoItem.CreateTodoEndpoint" id="createTodo">
       Title: <input type="text" name="Title" />
-      Description: <input type="text" name="Description" />
-      <button onclick="todoCreate(event)">
-        Add Todo
-      </button>
+      Description: <input type="text" name="Description"/>
+      <button>Add Todo</button>
     </Form>
-      <!--${ this.FormFor<CreateTodo>() }
-      
-    ${ this.EndForm() }-->
+    
+    <script type="text/javascript" src="content/scripts/create-item.js"></script>
    </div>
 </content:main>
 

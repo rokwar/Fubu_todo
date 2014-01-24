@@ -18140,3 +18140,5 @@ NugetPlan:
 1/21/2014 1:13:50 PM: [Info] Updated reference for c:\code\fubu_todo\src\fubu_todo\fubu_todo.csproj to ..\packages\RavenDB.Database\lib\net45\Raven.Abstractions.dll
 1/21/2014 1:13:50 PM: [Info] Writing changes to c:\code\fubu_todo\src\fubu_todo\fubu_todo.csproj
 1/21/2014 2:57:16 PM: [Info] Trying to remove FubuMVC.Razor
+1/23/2014 4:02:57 PM: [Error] FubuMVC.JQueryUI already exists in Project fubu_todo
+1/23/2014 4:02:57 PM: [Error] ripple.RippleFatalError: FubuMVC.JQueryUI already exists in Project fubu_todo
