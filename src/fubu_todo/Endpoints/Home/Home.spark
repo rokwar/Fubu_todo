@@ -16,7 +16,6 @@
         <tbody id="todoListContents">
           <for each="var todoItem in Model.todoList">
             <tr id="${todoItem.Id}">
-              <input type="hidden" name ="Id" value="${todoItem.Id}" />
               <td>
                 ${todoItem.title}
 
