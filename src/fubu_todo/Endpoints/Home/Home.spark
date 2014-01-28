@@ -1,38 +1,44 @@
 ﻿<viewdata model="fubu_todo.TodoListViewModel" />
 <content:main>
-  
-	</script>
+  <script type="text/template" id="todoItemTemplate">
+      
+  </script>
   <div class="content">
     <div class="tableInformation">
       <table class="table table-hober">
-        <tr>
-          <td>title</td>
-          <td>description</td>
-          <td>completed</td>
-        </tr>
-        <for each="var todoItem in Model.todoList">
+        <thead>
           <tr>
-            <form method="post">
+            <td>title</td>
+            <td>description</td>
+            <td>completed</td>
+          </tr>
+        </thead>
+        <tbody id="todoListContents">
+          <for each="var todoItem in Model.todoList">
+            <tr id="${todoItem.Id}">
               <input type="hidden" name ="Id" value="${todoItem.Id}" />
               <td>
-                ${todoItem.title} 
-                <input type="hidden" name ="title" value="${todoItem.title}" />
+                ${todoItem.title}
+
               </td>
               <td>
-                ${todoItem.description} 
-                <input type="hidden" name ="description" value="${todoItem.description}" />
+                ${todoItem.description}
+
               </td>
               <td>
-                ${todoItem.complete} 
-                <input type="hidden" name ="complete" value="${todoItem.complete}" />
+                ${todoItem.complete}
+
               </td>
-              <td><button onclick="todoComplete(event, $(this).parents('form:first'))">Mark Completed</button></td>
               <td>
-                <button type="submit" formaction="fubu_todo/todoitem/deleteTodo">Delete</button>
+                <button class="complete-button">Mark Completed</button>
               </td>
-            </form>
-          </tr>
-        </for>
+              <!--onclick="TodoApp.completeTodo(event, $(this).parents('form:first'))"-->
+              <td>
+                <button class="delete-button">Delete</button>
+              </td>
+            </tr>
+          </for>
+        </tbody>
       </table>
     </div>
     

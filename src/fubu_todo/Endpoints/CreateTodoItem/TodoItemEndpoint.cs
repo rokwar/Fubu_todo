@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Web.UI.WebControls;
+using FubuMVC.Core.Ajax;
 using FubuMVC.Core.Continuations;
 using fubu_todo.Endpoints.Home;
+using Microsoft.Data.OData.Query.SemanticAst;
 using Raven.Client.Linq;
 
 namespace fubu_todo
@@ -14,16 +16,18 @@ namespace fubu_todo
             _dbInteractor = dbInteractor; 
         }
 
-        public FubuContinuation completeTodo(CompleteTodo viewModel)
+        public AjaxContinuation completeTodo(CompleteTodo viewModel)
         {
             _dbInteractor.markComplete(viewModel.Id);
-            return FubuContinuation.RedirectTo<HomeEndpoint>(x => x.Index());
+            var continuation = AjaxContinuation.Successful();
+            return continuation;
         }
 
-        public FubuContinuation deleteTodo(DeleteTodo viewModel)
+        public AjaxContinuation deleteTodo(DeleteTodo viewModel)
         {
             _dbInteractor.deleteTodo(viewModel.Id);
-            return FubuContinuation.RedirectTo<HomeEndpoint>(x => x.Index());
+            var continuation = AjaxContinuation.Successful();
+            return continuation;
         }
     }
 
