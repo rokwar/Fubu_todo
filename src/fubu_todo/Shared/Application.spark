@@ -8,7 +8,9 @@
 	</script>  
 </head>
 <body>
-	${ this.WriteScriptTags() }
+	<div class="container">
+	  ${ this.WriteScriptTags() }
       <use content ="main"/>	
+	</div>
 </body>
 </html>

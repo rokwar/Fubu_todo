@@ -1,4 +1,6 @@
-﻿using FubuMVC.Core;
+﻿using System.Net;
+using FubuMVC.Core;
+using FubuMVC.Validation;
 
 namespace fubu_todo
 {
@@ -8,6 +10,8 @@ namespace fubu_todo
         {
             Actions.IncludeClassesSuffixedWithEndpoint();
             Routes.HomeIs<HomeEndpoint>(x => x.Index());
+
+            AlterSettings<ValidationSettings>(validation => validation.FailAjaxRequestsWith(HttpStatusCode.OK));
         }
     }
 }
